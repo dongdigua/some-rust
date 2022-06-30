@@ -85,7 +85,7 @@ impl Repl {
     }
 
     fn next(&mut self) {
-        if self.history_index < self.history.len() {
+        if self.history_index < self.history.len() - 1 {
             self.history_index += 1;
             self.buffer = self.history[self.history_index].clone()
         }
