@@ -1,4 +1,4 @@
-use exec_shell::repl::{self, Repl};
+use exec_shell::repl;
 use crossterm::terminal::{disable_raw_mode, enable_raw_mode};
 
 fn main() {
