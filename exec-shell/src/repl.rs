@@ -1,7 +1,7 @@
 use crossterm::{execute, cursor};
 use crossterm::event::{read, Event, KeyCode, KeyEvent, KeyModifiers};
 use crossterm::style::Print;
-use crossterm::terminal::{disable_raw_mode, enable_raw_mode, Clear, ClearType};
+use crossterm::terminal::{Clear, ClearType};
 use std::io::{stdin, stdout, Write};
 use std::process::Command;
 
