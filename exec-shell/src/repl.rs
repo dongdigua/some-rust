@@ -132,11 +132,10 @@ impl Repl {
             cursor::MoveRight((prompt.len() + self.cursor).try_into().unwrap())
         ).unwrap();
         if self.print_completion {
-            println!("");
+            write!(out, "\r\n");
             for s in &self.completion {
-                println!("\r{}", s);
+                write!(out, "{}\r\n", s);
             }
-            print!("\r");
             self.print_completion = false;
         }
     }
